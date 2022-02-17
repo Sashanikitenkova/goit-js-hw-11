@@ -5,6 +5,6 @@ var t,o=arguments[3];!function(o,i){"function"==typeof t&&t.amd?t([],function(){
 },{}],"krre":[function(require,module,exports) {
 
 },{}],"Focm":[function(require,module,exports) {
-"use strict";var i=require("notiflix/build/notiflix-notify-aio");require("./css/styles.css");
+"use strict";var e=require("notiflix/build/notiflix-notify-aio");require("./css/styles.css");const t=document.querySelector(".search-form"),o=document.querySelector(".gallery");function a(e){e.preventDefault();fetch("https://pixabay.com/api/?key=25749295-c1c91c3a002bacdc6232fef3b&q=yellow+flowers&image_type=photo&orientation=horizontal&safesearch=true&per_page=40&page=1").then(e=>e.json()).then(console.log)}t.addEventListener("submit, onSearch");const c="https://pixabay.com/api/?key=25749295-c1c91c3a002bacdc6232fef3b&q=yellow+flowers&image_type=photo&orientation=horizontal&safesearch=true&per_page=40&page=1";fetch(c).then(e=>e.json()).then(console.log);
 },{"notiflix/build/notiflix-notify-aio":"MeeU","./css/styles.css":"krre"}]},{},["Focm"], null)
-//# sourceMappingURL=/parcel-project-template/src.85352075.js.map
+//# sourceMappingURL=/parcel-project-template/src.1021a8f8.js.map
