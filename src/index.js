@@ -20,11 +20,12 @@ loadMoreBtn.refs.button.addEventListener('click', fetchArtic);
 function onSearch (e) {
         e.preventDefault();
     
-        newsApiService.query = e.currentTarget.elements.searchQuery.value;
+        newsApiService.query = e.currentTarget.elements.searchQuery.value.trim();
     
         if (newsApiService.query === '') {
             Notify.failure('Write a request');
-        };
+            return
+        }
             loadMoreBtn.shaw();
             newsApiService.resetPage();
             clearArticlesContainer();
